@@ -39,8 +39,7 @@ To use the Database Utils Library in your project, follow these steps:
 
 
    sh
-   ```
-   /`sh `/
+   ```sh
    git clone https://github.com/ddcsoftdev/jdbc-utils-lib.git
    ```
 
