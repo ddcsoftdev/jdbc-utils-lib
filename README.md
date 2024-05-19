@@ -37,14 +37,17 @@ To use the Database Utils Library in your project, follow these steps:
 
 1. Clone the repository:
 
+
+   sh
    ```
-   sh git clone https://github.com/ddcsoftdev/jdbc-utils-lib.git
+   git clone https://github.com/ddcsoftdev/jdbc-utils-lib.git
    ```
 
 3. Add the library to your project's dependencies. If you're using Maven, add the following to your \`pom.xml\`:
 
-  ```
+
   xml
+```
    <dependency>
        <groupId>com.database</groupId>
        <artifactId>utils</artifactId>
@@ -54,8 +57,9 @@ To use the Database Utils Library in your project, follow these steps:
 
 3. Alternatively, if you're using Gradle, add the following to your \`build.gradle\`:
 
-   ```
+
    groovy
+   ```
    implementation 'com.database:utils:1.0.0'
    ```
 
@@ -65,17 +69,18 @@ To use the Database Utils Library in your project, follow these steps:
 
 To create a new database:
 
-```
 java
+```
 Connection conn = // obtain your JDBC connection
 SQLStatements.createDatabase(conn, "newDatabaseName");
 ```
 
 To delete a database:
 
-\`\`\`java
+java
+```
 SQLStatements.deleteDatabase(conn, "databaseNameToDelete");
-\`\`\`
+```
 
 ![Database Creation Illustration](https://via.placeholder.com/800x300)
 
@@ -83,20 +88,22 @@ SQLStatements.deleteDatabase(conn, "databaseNameToDelete");
 
 To create a new table:
 
-\`\`\`java
+java
+```
 SQLStatements.Column[] columns = {
     new SQLStatements.Column("id", "INT", false),
     new SQLStatements.Column("name", "VARCHAR(100)", true)
 };
 
 SQLStatements.createTable(conn, "newTableName", columns);
-\`\`\`
+```
 
 To delete a table:
 
-\`\`\`java
+java
+```
 SQLStatements.deleteTable(conn, "tableNameToDelete");
-\`\`\`
+```
 
 ![Table Creation Illustration](https://via.placeholder.com/800x300)
 
@@ -104,24 +111,27 @@ SQLStatements.deleteTable(conn, "tableNameToDelete");
 
 To insert data into a table:
 
-\`\`\`java
+java
+```
 Object[] data = {1, "John Doe"};
 SQLStatements.insertRegisterToTable(conn, "tableName", data);
-\`\`\`
+```
 
 ### Retrieving Data from Tables
 
 To show all data from a table:
 
-\`\`\`java
+java
+```
 SQLStatements.showAllDataFromTable(conn, "tableName");
-\`\`\`
+```
 
 To get all data from a table as a list:
 
-\`\`\`java
+java
+```
 ArrayList<Object> results = SQLStatements.getAllDataFromTable(conn, "tableName");
-\`\`\`
+```
 
 ![Data Retrieval Illustration](https://via.placeholder.com/800x300)
 
@@ -129,21 +139,24 @@ ArrayList<Object> results = SQLStatements.getAllDataFromTable(conn, "tableName")
 
 To create a server login:
 
-\`\`\`java
+java
+```
 SQLStatements.createServerLogin(conn, "newLoginName", "password123");
-\`\`\`
+```
 
 To grant database access to a user:
 
-\`\`\`java
+java
+```
 SQLStatements.grantDatabaseAccess(conn, "databaseName", "userName");
-\`\`\`
+```
 
 To remove a user from a database:
 
-\`\`\`java
+java
+```
 SQLStatements.removeUserFromDatabase(conn, "databaseName", "userName");
-\`\`\`
+```
 
 ![User Management Illustration](https://via.placeholder.com/800x300)
 
