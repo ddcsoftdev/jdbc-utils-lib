@@ -37,9 +37,11 @@ To use the Database Utils Library in your project, follow these steps:
 
 1. Clone the repository:
 
-   `sh git clone https://github.com/yourusername/DatabaseUtilsLibrary.git`
+   ```
+   sh git clone https://github.com/yourusername/DatabaseUtilsLibrary.git
+   ```
 
-2. Add the library to your project's dependencies. If you're using Maven, add the following to your \`pom.xml\`:
+3. Add the library to your project's dependencies. If you're using Maven, add the following to your \`pom.xml\`:
 
   `xml
    <dependency>
