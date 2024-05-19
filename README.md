@@ -37,25 +37,23 @@ To use the Database Utils Library in your project, follow these steps:
 
 1. Clone the repository:
 
-   \`\`\`sh
-   git clone https://github.com/yourusername/DatabaseUtilsLibrary.git
-   \`\`\`
+   `sh git clone https://github.com/yourusername/DatabaseUtilsLibrary.git`
 
 2. Add the library to your project's dependencies. If you're using Maven, add the following to your \`pom.xml\`:
 
-   \`\`\`xml
+  `xml
    <dependency>
        <groupId>com.database</groupId>
        <artifactId>utils</artifactId>
        <version>1.0.0</version>
    </dependency>
-   \`\`\`
+  `
 
 3. Alternatively, if you're using Gradle, add the following to your \`build.gradle\`:
 
-   \`\`\`groovy
+   `groovy
    implementation 'com.database:utils:1.0.0'
-   \`\`\`
+   `
 
 ## Usage
 
